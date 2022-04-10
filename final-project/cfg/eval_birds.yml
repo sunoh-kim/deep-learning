@@ -1,0 +1,65 @@
+#################################################
+# DO NOT CHANGE 
+CONFIG_NAME: 'text-to-image'
+
+DATASET_NAME: 'birds'
+EMBEDDING_TYPE: 'cnn-rnn'
+DATA_DIR: 'data/birds'
+
+IMAGE_SIZE: 256
+CUDA: True
+
+R_PRECISION_DIR: './evaluation'
+R_PRECISION_FILE: 'r_precision.npz'
+R_PRECISION_FILE_HIDDEN: 'r_precision_hidden.npz'
+WRONG_CAPTION: 9
+
+CHECKPOINT_DIR: './checkpoint'
+#################################################
+
+
+GPU_ID: '0'
+WORKERS: 4
+
+BATCH_SIZE: 12
+LOAD_PRE_TRAIN: True
+
+
+TRAIN:
+    FLAG: False
+    NET_E: 'text_encoder.pth'
+    NET_G: 'netG_epoch.pth'
+    
+    MAX_EPOCH: 600
+    SNAPSHOT_INTERVAL: 50
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+    BATCH_SIZE: 12
+
+#################################################
+# DO NOT CHANGE 
+TEST:
+    B_EXAMPLE: False
+    GENERATED_TEST_IMAGES: './evaluation/generated_images'
+    GENERATED_HIDDEN_TEST_IMAGES: './evaluation/generated_images_hidden'
+#################################################
+    BATCH_SIZE: 12
+    
+RNN:
+    TYPE: 'LSTM'
+    
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    CONDITION_DIM: 100
+    R_NUM: 2
+
+
+#################################################
+# DO NOT CHANGE 
+TEXT:
+    CAPTIONS_PER_IMAGE: 10
+#################################################
+    EMBEDDING_DIM: 256
+    WORDS_NUM: 18
