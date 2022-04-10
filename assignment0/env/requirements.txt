@@ -1,5 +1,0 @@
-sklearn
-opencv-python
-go_vncdriver    
-universe
-atari_py
