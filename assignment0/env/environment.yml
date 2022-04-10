@@ -1,0 +1,12 @@
+name: deep-learning-19
+dependencies:
+  - python=3.6
+  - cudatoolkit=9.0
+  - cudnn=7.1.2
+  - nb_conda
+  - tensorflow-gpu=1.12
+  - matplotlib
+  - Pillow
+  - scipy=1.2.0
+  - nltk=3.4.1
+  - jupyter
