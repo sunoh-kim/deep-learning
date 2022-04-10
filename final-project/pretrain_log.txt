@@ -1,0 +1,182 @@
+/home/pil-kso/anaconda3/envs/deep-learning-final/bin/python2.7 /usr/share/pycharm/helpers/pydev/pydevd.py --multiproc --qt-support=auto --client 127.0.0.1 --port 33227 --file /home/pil-kso/PycharmProjects/AttnGAN/code/main.py --cfg cfg/bird_attn2.yml --gpu 0
+pydev debugger: process 23295 is connecting
+
+Connected to pydev debugger (build 192.7142.56)
+Using config:
+{'B_VALIDATION': False,
+ 'CONFIG_NAME': 'attn2',
+ 'CUDA': True,
+ 'DATASET_NAME': 'birds',
+ 'DATA_DIR': '../data/birds',
+ 'GAN': {'B_ATTENTION': True,
+         'B_DCGAN': False,
+         'CONDITION_DIM': 100,
+         'DF_DIM': 64,
+         'GF_DIM': 32,
+         'R_NUM': 2,
+         'Z_DIM': 100},
+ 'GPU_ID': 0,
+ 'LOAD_PRE_TRAIN': False,
+ 'PRE_TRAIN': {'BATCH_SIZE': 32,
+               'B_NET_D': True,
+               'DISCRIMINATOR_LR': 0.0002,
+               'ENCODER_LR': 0.0005,
+               'FLAG': True,
+               'GENERATOR_LR': 0.0002,
+               'MAX_EPOCH': 300,
+               'NET_E': '../checkpoint/text_encoder.pth',
+               'NET_G': '',
+               'RNN_GRAD_CLIP': 0.25,
+               'SMOOTH': {'GAMMA1': 4.0,
+                          'GAMMA2': 5.0,
+                          'GAMMA3': 10.0,
+                          'LAMBDA': 1.0},
+               'SNAPSHOT_INTERVAL': 50},
+ 'PRE_TREE': {'BASE_SIZE': 299, 'BRANCH_NUM': 1},
+ 'PRE_WORKERS': 1,
+ 'RNN_TYPE': 'LSTM',
+ 'TEXT': {'CAPTIONS_PER_IMAGE': 10, 'EMBEDDING_DIM': 256, 'WORDS_NUM': 18},
+ 'TRAIN': {'BATCH_SIZE': 12,
+           'B_NET_D': True,
+           'DISCRIMINATOR_LR': 0.0002,
+           'ENCODER_LR': 0.0002,
+           'FLAG': True,
+           'GENERATOR_LR': 0.0002,
+           'MAX_EPOCH': 600,
+           'NET_E': '../checkpoint/text_encoder.pth',
+           'NET_G': '',
+           'RNN_GRAD_CLIP': 0.25,
+           'SMOOTH': {'GAMMA1': 4.0,
+                      'GAMMA2': 5.0,
+                      'GAMMA3': 10.0,
+                      'LAMBDA': 5.0},
+           'SNAPSHOT_INTERVAL': 50},
+ 'TREE': {'BASE_SIZE': 64, 'BRANCH_NUM': 3},
+ 'WORKERS': 4}
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: ../data/birds/train/filenames.pickle (8855)
+Load filenames from: ../data/birds/test/filenames.pickle (2933)
+Load from:  ../data/birds/captions.pickle
+5450 10
+Total filenames:  11788 001.Black_footed_Albatross/Black_Footed_Albatross_0046_18.jpg
+Load filenames from: ../data/birds/train/filenames.pickle (8855)
+Load filenames from: ../data/birds/test/filenames.pickle (2933)
+Load from:  ../data/birds/captions.pickle
+/home/pil-kso/anaconda3/envs/deep-learning-final/lib/python2.7/site-packages/torch/nn/modules/rnn.py:51: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.5 and num_layers=1
+  "num_layers={}".format(dropout, num_layers))
+Load  ../checkpoint/text_encoder.pth
+Load  ../checkpoint/image_encoder.pth
+start_epoch 200
+| epoch 200 |     0/  276 batches | ms/batch 26.91 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 200 |   200/  276 batches | ms/batch 1130.10 | s_loss  1.58  1.62 | w_loss  1.54  1.54
+-----------------------------------------------------------------------------------------
+| end epoch 200 | valid loss  4.47  4.31 | lr 0.00050|
+-----------------------------------------------------------------------------------------
+Save G/Ds models.
+| end epoch 200 | minimum loss  8.78|
+| epoch 201 |     0/  276 batches | ms/batch  8.01 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 201 |   200/  276 batches | ms/batch 1095.95 | s_loss  1.60  1.64 | w_loss  1.57  1.57
+-----------------------------------------------------------------------------------------
+| end epoch 201 | valid loss  4.43  4.25 | lr 0.00049|
+-----------------------------------------------------------------------------------------
+| end epoch 201 | minimum loss  8.67|
+| epoch 202 |     0/  276 batches | ms/batch  9.75 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 202 |   200/  276 batches | ms/batch 1093.07 | s_loss  1.63  1.67 | w_loss  1.60  1.60
+-----------------------------------------------------------------------------------------
+| end epoch 202 | valid loss  4.62  4.50 | lr 0.00048|
+-----------------------------------------------------------------------------------------
+| epoch 203 |     0/  276 batches | ms/batch  7.82 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 203 |   200/  276 batches | ms/batch 1055.55 | s_loss  1.61  1.65 | w_loss  1.59  1.59
+-----------------------------------------------------------------------------------------
+| end epoch 203 | valid loss  4.33  4.18 | lr 0.00047|
+-----------------------------------------------------------------------------------------
+| end epoch 203 | minimum loss  8.51|
+| epoch 204 |     0/  276 batches | ms/batch 10.31 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 204 |   200/  276 batches | ms/batch 1029.31 | s_loss  1.58  1.62 | w_loss  1.56  1.55
+-----------------------------------------------------------------------------------------
+| end epoch 204 | valid loss  4.54  4.43 | lr 0.00046|
+-----------------------------------------------------------------------------------------
+| epoch 205 |     0/  276 batches | ms/batch  7.75 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 205 |   200/  276 batches | ms/batch 987.87 | s_loss  1.58  1.61 | w_loss  1.55  1.56
+-----------------------------------------------------------------------------------------
+| end epoch 205 | valid loss  4.50  4.31 | lr 0.00045|
+-----------------------------------------------------------------------------------------
+| epoch 206 |     0/  276 batches | ms/batch  7.72 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 206 |   200/  276 batches | ms/batch 990.14 | s_loss  1.55  1.60 | w_loss  1.51  1.52
+-----------------------------------------------------------------------------------------
+| end epoch 206 | valid loss  4.49  4.36 | lr 0.00044|
+-----------------------------------------------------------------------------------------
+| epoch 207 |     0/  276 batches | ms/batch  7.95 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 207 |   200/  276 batches | ms/batch 1016.19 | s_loss  1.55  1.59 | w_loss  1.53  1.53
+-----------------------------------------------------------------------------------------
+| end epoch 207 | valid loss  4.47  4.37 | lr 0.00043|
+-----------------------------------------------------------------------------------------
+| epoch 208 |     0/  276 batches | ms/batch  7.98 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 208 |   200/  276 batches | ms/batch 1008.26 | s_loss  1.54  1.58 | w_loss  1.50  1.51
+-----------------------------------------------------------------------------------------
+| end epoch 208 | valid loss  4.48  4.37 | lr 0.00043|
+-----------------------------------------------------------------------------------------
+| epoch 209 |     0/  276 batches | ms/batch  8.61 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 209 |   200/  276 batches | ms/batch 1001.86 | s_loss  1.52  1.56 | w_loss  1.49  1.50
+-----------------------------------------------------------------------------------------
+| end epoch 209 | valid loss  4.37  4.24 | lr 0.00042|
+-----------------------------------------------------------------------------------------
+| epoch 210 |     0/  276 batches | ms/batch  8.13 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 210 |   200/  276 batches | ms/batch 1021.25 | s_loss  1.53  1.57 | w_loss  1.49  1.50
+-----------------------------------------------------------------------------------------
+| end epoch 210 | valid loss  4.30  4.19 | lr 0.00041|
+-----------------------------------------------------------------------------------------
+| end epoch 210 | minimum loss  8.49|
+| epoch 211 |     0/  276 batches | ms/batch  7.73 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 211 |   200/  276 batches | ms/batch 1010.99 | s_loss  1.52  1.56 | w_loss  1.50  1.50
+-----------------------------------------------------------------------------------------
+| end epoch 211 | valid loss  4.35  4.14 | lr 0.00040|
+-----------------------------------------------------------------------------------------
+| epoch 212 |     0/  276 batches | ms/batch  9.78 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 212 |   200/  276 batches | ms/batch 1174.58 | s_loss  1.50  1.54 | w_loss  1.46  1.47
+-----------------------------------------------------------------------------------------
+| end epoch 212 | valid loss  4.43  4.34 | lr 0.00039|
+-----------------------------------------------------------------------------------------
+| epoch 213 |     0/  276 batches | ms/batch  9.02 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 213 |   200/  276 batches | ms/batch 1180.01 | s_loss  1.48  1.52 | w_loss  1.46  1.47
+-----------------------------------------------------------------------------------------
+| end epoch 213 | valid loss  4.35  4.16 | lr 0.00038|
+-----------------------------------------------------------------------------------------
+| epoch 214 |     0/  276 batches | ms/batch  8.65 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 214 |   200/  276 batches | ms/batch 1041.81 | s_loss  1.49  1.53 | w_loss  1.47  1.47
+-----------------------------------------------------------------------------------------
+| end epoch 214 | valid loss  4.31  4.18 | lr 0.00038|
+-----------------------------------------------------------------------------------------
+| end epoch 214 | minimum loss  8.49|
+| epoch 215 |     0/  276 batches | ms/batch  8.00 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 215 |   200/  276 batches | ms/batch 1026.22 | s_loss  1.49  1.53 | w_loss  1.45  1.47
+-----------------------------------------------------------------------------------------
+| end epoch 215 | valid loss  4.40  4.25 | lr 0.00037|
+-----------------------------------------------------------------------------------------
+| epoch 216 |     0/  276 batches | ms/batch  7.93 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 216 |   200/  276 batches | ms/batch 1028.87 | s_loss  1.45  1.49 | w_loss  1.43  1.44
+-----------------------------------------------------------------------------------------
+| end epoch 216 | valid loss  4.34  4.17 | lr 0.00036|
+-----------------------------------------------------------------------------------------
+| epoch 217 |     0/  276 batches | ms/batch  8.12 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 217 |   200/  276 batches | ms/batch 1024.77 | s_loss  1.46  1.50 | w_loss  1.43  1.44
+-----------------------------------------------------------------------------------------
+| end epoch 217 | valid loss  4.21  4.08 | lr 0.00035|
+-----------------------------------------------------------------------------------------
+| end epoch 217 | minimum loss  8.30|
+| epoch 218 |     0/  276 batches | ms/batch  8.66 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 218 |   200/  276 batches | ms/batch 1016.66 | s_loss  1.44  1.48 | w_loss  1.40  1.41
+-----------------------------------------------------------------------------------------
+| end epoch 218 | valid loss  4.15  4.00 | lr 0.00035|
+-----------------------------------------------------------------------------------------
+| end epoch 218 | minimum loss  8.15|
+| epoch 219 |     0/  276 batches | ms/batch  7.95 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 219 |   200/  276 batches | ms/batch 1020.24 | s_loss  1.45  1.48 | w_loss  1.41  1.42
+-----------------------------------------------------------------------------------------
+| end epoch 219 | valid loss  4.19  4.02 | lr 0.00034|
+-----------------------------------------------------------------------------------------
+| epoch 220 |     0/  276 batches | ms/batch  8.47 | s_loss  0.01  0.01 | w_loss  0.01  0.01
+| epoch 220 |   200/  276 batches | ms/batch 1022.81 | s_loss  1.41  1.46 | w_loss  1.39  1.40
+-----------------------------------------------------------------------------------------
+| end epoch 220 | valid loss  4.24  4.05 | lr 0.00033|
+-----------------------------------------------------------------------------------------
