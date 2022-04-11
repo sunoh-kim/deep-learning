@@ -13,7 +13,7 @@ Environment Setup, Linear Model
 Data Curation, Implementing Neural Networks from Scratch, Neural Networks 
 
 ### Assignment2 (TensorFlow):
-Implementing Convolutoinal Neural Network (CNN), Training CNN, Visualizing CNN 
+Implementing Convolutional Neural Network (CNN), Training CNN, Visualizing CNN 
 
 ### Assignment3 (TensorFlow):
 Implementing Recurrent Neural Network (RNN), Image Captioning, Language Modeling
@@ -22,7 +22,7 @@ Implementing Recurrent Neural Network (RNN), Image Captioning, Language Modeling
 Implementing Variational AutoEncoder (VAE) with MNIST data, Implementing Conditional-Generative Adversarial Network (GAN) with MNIST Data, Implementing Conditional-GAN with Face Data
 
 ### Assignment5 (TensorFlow):
-Implementing and Training a Deep Q-Network (DQN), Playing Atari games using a Asynchronous Advantage Actor-Critic (A3C) agent 
+Implementing and Training a Deep Q-Network (DQN), Playing Atari games using an Asynchronous Advantage Actor-Critic (A3C) agent 
 
 ### Final Project (PyTorch):
 Text-to-image Synthesis based on [AttnGAN](https://github.com/taoxugit/AttnGAN)
